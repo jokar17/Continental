@@ -67,7 +67,7 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 body {
@@ -175,12 +175,13 @@ small {
   padding: 16px 24px;
   border-radius: 24px;
   border: none;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
   text-align: center;
   transition: var(--transition-fast);
+  font-size: 1.2rem;
 }
 
 .btn--primary {
@@ -201,6 +202,37 @@ small {
 .btn--secondary:hover {
   background-color: white;
   color: var(--color-testo);
+}
+
+.btn--taste {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 0;
+  outline: 1px solid white;
+  outline-offset: 2px;
+}
+
+.btn--taste:hover {
+  background-color: white;
+  color: var(--color-testo);
+}
+
+.footer-item .btn--footer {
+  background: linear-gradient(
+    45deg,
+    var(--color-arancio),
+    var(--color-arancio-scuro)
+  );
+  color: white;
+  box-shadow: 0 4px 15px rgba(243, 156, 18, 0.3);
+  padding: 16px 24px;
+}
+
+.btn--footer:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(243, 156, 18, 0.4);
+  background: linear-gradient(45deg, var(--color-arancio-scuro), #d35400);
 }
 
 /* ===========================================
@@ -286,7 +318,7 @@ small {
 .footer-section {
   background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
   color: white;
-  padding: 60px 20px 40px;
+  padding: 60px 20px 5px;
   margin-top: 80px;
 }
 
@@ -397,12 +429,11 @@ small {
   color: var(--color-arancio);
 }
 
-.footer-bottom {
+.footer-bottom p {
   border-top: 1px solid #34495e;
   margin-top: 40px;
-  padding-top: 20px;
   text-align: center;
-  color: #95a5a6;
+  color: #c0c4c4;
   font-size: 12px;
 }
 
@@ -412,7 +443,7 @@ small {
 
 @media screen and (max-width: 768px) {
   html {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   body {
@@ -450,7 +481,7 @@ small {
   }
 
   .footer-section {
-    padding: 40px 16px 30px;
+    padding: 40px 16px 10px;
   }
   .footer-items {
     grid-template-columns: 1fr;
@@ -495,7 +526,7 @@ small {
 
 @media screen and (max-width: 480px) {
   html {
-    font-size: 13px;
+    font-size: 16px;
   }
   .restaurant-name {
     font-size: 2.25rem;

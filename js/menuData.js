@@ -3,7 +3,7 @@ const menuData = {
   antipasti: [
     {
       id: 1,
-      foto: "../img/food-pic.jpg",
+      foto: "./img/food-pic.jpg",
       nome: "Panini",
       prezzo: 5.0,
       descrizione: "Panini tradizionali",
@@ -12,7 +12,7 @@ const menuData = {
     },
     {
       id: 2,
-      foto: "../img/food-pic.jpg",
+      foto: "./img/food-pic.jpg",
       nome: "Insalata",
       prezzo: 10.0,
       descrizione: "Insalata fresca mista",
@@ -24,7 +24,7 @@ const menuData = {
   zuppe: [
     {
       id: 3,
-      foto: "../img/food-pic.jpg",
+      foto: "./img/food-pic.jpg",
       nome: "Zuppa di Pesce",
       prezzo: 15.0,
       descrizione: "Zuppa tradizionale di pesce",
@@ -33,7 +33,7 @@ const menuData = {
     },
     {
       id: 4,
-      foto: "../img/food-pic.jpg",
+      foto: "./img/food-pic.jpg",
       nome: "Zuppa di Lumache",
       prezzo: 20.0,
       descrizione: "Zuppa di lumache con riso attieké",
@@ -42,7 +42,7 @@ const menuData = {
     },
     {
       id: 5,
-      foto: "../img/food-pic.jpg",
+      foto: "./img/food-pic.jpg",
       nome: "Zuppa del Pescatore",
       prezzo: 20.0,
       descrizione: "Zuppa del pescatore con gamberi",
@@ -51,7 +51,7 @@ const menuData = {
     },
     {
       id: 6,
-      foto: "../img/food-pic.jpg",
+      foto: "./img/food-pic.jpg",
       nome: "Zuppa Olio di Palma",
       prezzo: 20.0,
       descrizione: "Pasta di banana con zuppa all'olio di palma",
@@ -63,7 +63,7 @@ const menuData = {
   primi_piatti: [
     {
       id: 7,
-      foto: "../img/food-pic.jpg",
+      foto: "./img/food-pic.jpg",
       nome: "Garba",
       prezzo: 15.0,
       descrizione: "Tonno e semola di manioca",
@@ -72,7 +72,7 @@ const menuData = {
     },
     {
       id: 8,
-      foto: "../img/food-pic.jpg",
+      foto: "./img/food-pic.jpg",
       nome: "Attiéké Pesce Fritto",
       prezzo: 15.0,
       descrizione: "Semola di manioca con pesce fritto",
@@ -81,7 +81,7 @@ const menuData = {
     },
     {
       id: 9,
-      foto: "../img/food-pic.jpg",
+      foto: "./img/food-pic.jpg",
       nome: "Tchep",
       prezzo: 15.0,
       descrizione: "Riso, verdura, pesce, pollo",
@@ -90,7 +90,7 @@ const menuData = {
     },
     {
       id: 10,
-      foto: "../img/food-pic.jpg",
+      foto: "./img/food-pic.jpg",
       nome: "Yassa Pollo",
       prezzo: 20.0,
       descrizione: "Pollo marinato con cipolla e limone su riso",
@@ -99,7 +99,7 @@ const menuData = {
     },
     {
       id: 11,
-      foto: "../img/food-pic.jpg",
+      foto: "./img/food-pic.jpg",
       nome: "Yam e Pollo",
       prezzo: 20.0,
       descrizione: "Igname bollito con pollo",
@@ -108,7 +108,7 @@ const menuData = {
     },
     {
       id: 12,
-      foto: "../img/food-pic.jpg",
+      foto: "./img/food-pic.jpg",
       nome: "Placali",
       prezzo: 20.0,
       descrizione: "Pasta di manioca con zuppa",
@@ -120,7 +120,7 @@ const menuData = {
   secondi_piatti: [
     {
       id: 13,
-      foto: "../img/food-pic.jpg",
+      foto: "./img/food-pic.jpg",
       nome: "Alloco Pesce Fritto",
       prezzo: 20.0,
       descrizione: "Platano fritto con pesce",
@@ -129,7 +129,7 @@ const menuData = {
     },
     {
       id: 14,
-      foto: "../img/food-pic.jpg",
+      foto: "./img/food-pic.jpg",
       nome: "Alloco Pollo Fritto",
       prezzo: 20.0,
       descrizione: "Platano fritto con pollo",
@@ -138,7 +138,7 @@ const menuData = {
     },
     {
       id: 15,
-      foto: "../img/food-pic.jpg",
+      foto: "./img/food-pic.jpg",
       nome: "Kedjenou di Pollo",
       prezzo: 20.0,
       descrizione: "Pollo tradizionale in terracotta",
@@ -147,7 +147,7 @@ const menuData = {
     },
     {
       id: 16,
-      foto: "../img/food-pic.jpg",
+      foto: "./img/food-pic.jpg",
       nome: "Pollo/Pesce alla Griglia",
       prezzo: 25.0,
       descrizione: "Pollo o pesce braisé alla griglia",
@@ -156,7 +156,7 @@ const menuData = {
     },
     {
       id: 17,
-      foto: "../img/food-pic.jpg",
+      foto: "./img/food-pic.jpg",
       nome: "Pollo/Pesce e Patate Fritte",
       prezzo: 15.0,
       descrizione: "Pollo o pesce con patate fritte",
@@ -165,7 +165,7 @@ const menuData = {
     },
     {
       id: 18,
-      foto: "../img/food-pic.jpg",
+      foto: "./img/food-pic.jpg",
       nome: "Tacchino Fritto",
       prezzo: 15.0,
       descrizione: "Tacchino fritto tradizionale",
@@ -177,7 +177,7 @@ const menuData = {
   specialita: [
     {
       id: 19,
-      foto: "../img/food-pic.jpg",
+      foto: "./img/food-pic.jpg",
       nome: "Piatto VIP",
       prezzo: 50.0,
       descrizione: "Pesce, Pollo, Patate fritte, Attiéké",
