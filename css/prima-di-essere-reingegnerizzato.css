@@ -1,0 +1,877 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===========================================
+   IMPORTAZIONE FONT DA GOOGLE FONTS
+   =========================================== */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap");
+
+/* ===========================================
+   VARIABILI CSS
+   =========================================== */
+:root {
+  /* Font Families */
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Source Sans Pro", sans-serif;
+
+  /* Colori palette senegalese */
+  --color-terra: #8b4513;
+  --color-giallo: #f4d03f;
+  --color-verde: #27ae60;
+  --color-rosso: #e74c3c;
+  --color-crema: #f8f6f0;
+
+  /* Font Sizes Desktop */
+  --h1-desktop: 2.5rem;
+  --h2-desktop: 2rem;
+  --h3-desktop: 1.75rem;
+  --h4-desktop: 1.375rem;
+  --body-desktop: 1.125rem;
+  --small-desktop: 1rem;
+
+  /* Font Sizes Mobile */
+  --h1-mobile: 2rem;
+  --h2-mobile: 1.75rem;
+  --h3-mobile: 1.5rem;
+  --h4-mobile: 1.25rem;
+  --body-mobile: 1rem;
+  --small-mobile: 0.875rem;
+
+  /* Line Heights */
+  --line-height-heading: 1.2;
+  --line-height-body: 1.6;
+}
+
+/* ===========================================
+   RESET E BASE
+   =========================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px; /* Base per rem */
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--body-desktop);
+  line-height: var(--line-height-body);
+  color: #333;
+  background-color: var(--color-crema);
+}
+
+/* ===========================================
+   TIPOGRAFIA - DESKTOP FIRST
+   =========================================== */
+
+/* TITOLI */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  line-height: var(--line-height-heading);
+  margin-bottom: 1rem;
+  color: var(--color-terra);
+}
+
+h1 {
+  font-size: var(--h1-desktop);
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: var(--h2-desktop);
+  margin-bottom: 1.25rem;
+}
+
+h3 {
+  font-size: var(--h3-desktop);
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: var(--h4-desktop);
+  margin-bottom: 0.75rem;
+}
+
+/* TESTO NORMALE */
+p {
+  font-size: var(--body-desktop);
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+/* TESTO PICCOLO */
+.small-text,
+small {
+  font-size: var(--small-desktop);
+  color: #666;
+}
+
+/* ===========================================
+   CLASSI SPECIALIZZATE
+   =========================================== */
+
+/* Nome del ristorante */
+.restaurant-name {
+  font-family: var(--font-heading);
+  font-size: var(--h1-desktop);
+  font-weight: 700;
+  color: var(--color-verde);
+
+  font-style: italic;
+}
+
+/* Sezioni del menu */
+.menu-section {
+  font-family: var(--font-heading);
+  font-size: var(--h2-desktop);
+  color: var(--color-rosso);
+  border-bottom: 2px solid var(--color-giallo);
+  padding-bottom: 0.5rem;
+  margin: 2rem 0 1.5rem 0;
+}
+
+/* Nome dei piatti */
+.dish-name {
+  font-family: var(--font-heading);
+  font-size: var(--h4-desktop);
+  font-weight: 600;
+  color: var(--color-terra);
+  margin-bottom: 0.5rem;
+}
+
+/* Descrizione piatti */
+.dish-description {
+  font-family: var(--font-body);
+  font-size: var(--body-desktop);
+  color: #555;
+  font-style: italic;
+  margin-bottom: 0.25rem;
+}
+
+/* Prezzi */
+.price {
+  font-family: var(--font-body);
+  font-size: var(--body-desktop);
+  font-weight: 600;
+  color: var(--color-verde);
+}
+
+/* ===========================================
+   RESPONSIVE - MOBILE
+   =========================================== */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px; /* Riduci base per mobile */
+  }
+
+  body {
+    font-size: var(--body-mobile);
+  }
+
+  h1 {
+    font-size: var(--h1-mobile);
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: var(--h2-mobile);
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: var(--h3-mobile);
+    margin-bottom: 0.75rem;
+  }
+
+  h4 {
+    font-size: var(--h4-mobile);
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: var(--body-mobile);
+    margin-bottom: 0.75rem;
+  }
+
+  .small-text,
+  small {
+    font-size: var(--small-mobile);
+  }
+
+  /* Classi specializzate mobile */
+  .restaurant-name {
+    font-size: var(--h1-mobile);
+    margin-bottom: 1.5rem;
+  }
+
+  .menu-section {
+    font-size: var(--h2-mobile);
+    margin: 1.5rem 0 1rem 0;
+  }
+
+  .dish-name {
+    font-size: var(--h4-mobile);
+  }
+
+  .dish-description {
+    font-size: var(--body-mobile);
+  }
+
+  .price {
+    font-size: var(--body-mobile);
+  }
+}
+
+/* ===========================================
+   RESPONSIVE - MOBILE PICCOLO
+   =========================================== */
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 13px;
+  }
+
+  .restaurant-name {
+    font-size: 2.25rem;
+  }
+
+  .menu-section {
+    font-size: 1.875rem;
+  }
+}
+
+/********************* EFFETTI PARTICOLARI*/
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+body {
+  padding-top: 60px; /* regola in base all'altezza della tua nav */
+}
+
+.nav-links {
+  /* ... resto del codice uguale ... */
+  z-index: 1000; /* ⭐ diminuito perché nav-container deve stare sopra */
+}
+/***********************  HEADER ********************/
+
+.nav-container {
+  position: fixed; /* ⭐ cambiato da relative */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1001; /* sopra il menu */
+  padding: 16px 16px 0;
+  background-color: white;
+  /*transition: all 0.3s ease;*/
+  border-bottom: 1px solid #eee;
+  transform: translateY(0);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*
+.nav-container.scrolled {
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}*/
+
+.nav-container.hidden {
+  transform: translateY(-100%);
+}
+
+.nav-title {
+  text-transform: uppercase;
+}
+
+.nav-menuBurgerBread {
+  border: 1px solid black;
+  width: 24px;
+  height: 8px;
+  border-radius: 4px;
+  margin: 2px;
+  background-color: black;
+}
+
+.nav-menuBurger {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+
+.nav-menuBurgerBread {
+  transition: all 0.3s ease;
+}
+
+.menu-open .nav-menuBurgerBread:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 8px);
+}
+
+.menu-open .nav-menuBurgerBread:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-open .nav-menuBurgerBread:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -8px);
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 24px;
+
+  position: fixed;
+  left: 0;
+  top: 60px;
+  width: 100%;
+  height: calc(100vh - 60px);
+  background-color: #f8f6f0;
+  z-index: 999;
+  clip-path: inset(0 0 100% 0); /* nascosto */
+  transition: clip-path 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.visible {
+  clip-path: inset(0 0 0% 0); /* completamente visibile */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (min-width: 770px) {
+  .nav-menuBurger {
+    display: none;
+  }
+
+  .nav-links {
+    position: static; /* invece di fixed */
+    width: auto; /* invece di 100% */
+    height: auto; /* invece di calc(100vh - 60px) */
+
+    /* Layout orizzontale per desktop */
+    flex-direction: row; /* invece di column */
+    gap: 32px; /* spazio tra i link */
+
+    /* Reset visual */
+    background-color: transparent; /* toglie il background */
+    clip-path: none; /* rimuove il clip-path */
+    padding: 0; /* reset padding */
+
+    /* Sempre visibile su desktop */
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/************************************* BODY *********************/
+
+.hero-container {
+  position: relative;
+  height: calc(90vh - 60px);
+  background-image: url("./img/hero-img.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding-bottom: 72px;
+}
+
+.hero-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 0.5 = 50% di opacità */
+  z-index: 1;
+}
+
+.hero-container > * {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.hero-title {
+  text-align: center;
+  color: white;
+}
+
+.btn {
+  margin: 8px 0;
+  width: 100%;
+  padding: 16px 24px;
+  border-radius: 24px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.btn--primary {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.btn--primary:hover {
+  background-color: #c0392b;
+}
+
+.btn--secondary {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn--secondary:hover {
+  background-color: white;
+  color: #333;
+}
+
+/************** DISCLAIMER *****************/
+
+.disclaimer {
+  background-color: #c0392b;
+  padding: 16px 8px;
+}
+
+.disclaimer p {
+  color: #f8f6f0;
+}
+
+@media screen and (min-width: 700px) {
+  .disclaimer {
+    padding: 16px 96px;
+  }
+}
+
+/******************* CARDS ************/
+
+.piatti-section {
+  margin: 96px 16px; /* padding più consistente */
+  max-width: 1200px; /* limite larghezza */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.piatti-title {
+  text-align: center;
+  margin-bottom: 32px; /* spazio sotto il titolo */
+}
+
+/* Grid per le carte su desktop */
+.piatti-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.piatti-card {
+  width: 100%;
+  min-height: 400px;
+  border-radius: 12px; /* bordi più morbidi */
+  overflow: hidden;
+  border: 1px solid #e0e0e0; /* bordo più delicato */
+  background: white;
+  transition: all 0.3s ease; /* transizione smooth */
+  cursor: pointer;
+}
+
+.piatti-card:hover {
+  transform: translateY(-4px); /* solleva leggermente */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* ombra più elegante */
+  border-color: #ccc;
+}
+
+.piatti-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover; /* ⭐ importante per immagini proporzionate */
+  transition: transform 0.3s ease;
+}
+
+.card-description {
+  padding: 20px; /* padding simmetrico */
+  height: 150px; /* altezza fissa per allineamento */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.card-description p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #666;
+  flex-grow: 1; /* occupa lo spazio disponibile */
+}
+
+.price {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  color: #e74c3c !important; /* colore accent per il prezzo */
+  margin-top: 12px !important;
+  align-self: flex-end; /* allinea a destra */
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .piatti-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .piatti-section {
+    margin: 64px 16px;
+  }
+}
+
+/* Mobile: verticale */
+@media screen and (max-width: 768px) {
+  .piatti-card {
+    flex-direction: column;
+  }
+}
+
+/* Desktop: orizzontale */
+@media screen and (min-width: 769px) {
+  .piatti-card {
+    display: flex;
+    flex-direction: row;
+    height: 200px; /* più compatto */
+  }
+
+  .piatti-card img {
+    width: 300px; /* larghezza fissa */
+    height: 100%;
+    flex-shrink: 0;
+  }
+
+  .card-description {
+    flex: 1;
+    padding: 24px;
+    margin: auto;
+  }
+}
+
+/******************* CTA SECTION *********************/
+
+.taste-section {
+  background-image: url(./img/hero-img.jpg);
+  background-size: cover;
+  text-align: center;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  margin: 48px 0;
+  position: relative;
+}
+
+.taste-section::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.taste-section > * {
+  z-index: 3;
+}
+
+.taste-title {
+  color: #333;
+  background-color: white;
+  width: fit-content;
+}
+
+.taste-para {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.btn--taste {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 0;
+  outline: 1px solid white;
+  outline-offset: 2px;
+}
+
+.btn--taste:hover {
+  background-color: white;
+  color: #333;
+}
+
+/*************** GENERAL INFO ********************/
+
+.info-section {
+  padding: 48px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.info-item {
+  border-bottom: 2px solid #333;
+  margin-bottom: 24px;
+}
+
+.info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.info-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info-toggle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+.info-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.info-content.active {
+  max-height: 200px;
+  padding-bottom: 24px;
+}
+
+.info-toggle.active {
+  transform: rotate(45deg);
+}
+
+.info-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  font-weight: 400;
+}
+
+.info-header:hover {
+  background-color: rgba(139, 69, 19, 0.05);
+  margin: 0 -10px;
+  padding: 20px 10px;
+  border-radius: 4px;
+}
+
+/******************** FOOTER ****************/
+.footer-section {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: white;
+  padding: 60px 20px 40px;
+  margin-top: 80px;
+}
+
+.footer-items {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  align-items: start;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-item h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f39c12;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.footer-item h4::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #f39c12;
+}
+
+.footer-item img {
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 8px;
+}
+
+.footer-item p {
+  line-height: 1.6;
+  color: #ecf0f1;
+  font-size: 14px;
+}
+
+.footer-item a {
+  color: #bdc3c7;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  padding: 4px 0;
+  border-bottom: 1px solid transparent;
+}
+
+.footer-item a:hover {
+  color: #f39c12;
+  border-bottom-color: #f39c12;
+  transform: translateX(5px);
+}
+
+.btn--footer {
+  background: linear-gradient(45deg, #f39c12, #e67e22);
+  color: white;
+  box-shadow: 0 4px 15px rgba(243, 156, 18, 0.3);
+}
+
+.btn--footer:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(243, 156, 18, 0.4);
+  background: linear-gradient(45deg, #e67e22, #d35400);
+}
+
+/* Styling specifico per gli elementi */
+.footer-item:first-child {
+  grid-column: span 1;
+}
+
+.footer-item:first-child p {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+/* Icone per contatti */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+  background-color: #f39c12;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  flex-shrink: 0;
+}
+
+/* Links nel footer */
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Orari */
+.hours-info p {
+  margin: 4px 0;
+}
+
+.hours-info p:first-of-type {
+  font-weight: 600;
+  color: #f39c12;
+}
+
+/* Copyright footer */
+.footer-bottom {
+  border-top: 1px solid #34495e;
+  margin-top: 40px;
+  padding-top: 20px;
+  text-align: center;
+  color: #95a5a6;
+  font-size: 12px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .footer-section {
+    padding: 40px 16px 30px;
+  }
+
+  .footer-items {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-item h4 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer-items {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+}

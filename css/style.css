@@ -1,0 +1,346 @@
+/* ===========================================
+   BOTTONI SPECIFICI
+   =========================================== */
+
+.btn--taste {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 0;
+  outline: 1px solid white;
+  outline-offset: 2px;
+}
+
+.btn--taste:hover {
+  background-color: white;
+  color: var(--color-testo);
+}
+
+.btn--footer {
+  background: linear-gradient(
+    45deg,
+    var(--color-arancio),
+    var(--color-arancio-scuro)
+  );
+  color: white;
+  box-shadow: 0 4px 15px rgba(243, 156, 18, 0.3);
+}
+
+.btn--footer:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(243, 156, 18, 0.4);
+  background: linear-gradient(45deg, var(--color-arancio-scuro), #d35400);
+}
+
+/* ===========================================
+   HERO SECTION
+   =========================================== */
+.hero-container {
+  position: relative;
+  height: calc(90vh - 60px);
+  background-image: url("../img/hero-img.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding-bottom: 72px;
+}
+
+.hero-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-container > * {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.hero-title {
+  text-align: center;
+  color: white;
+}
+
+/* ===========================================
+   DISCLAIMER
+   =========================================== */
+.disclaimer {
+  background-color: var(--color-rosso-scuro);
+  padding: 16px 8px;
+}
+
+.disclaimer p {
+  color: var(--color-crema);
+}
+
+/* ===========================================
+   SEZIONE PIATTI
+   =========================================== */
+.piatti-section {
+  margin: var(--section-padding) 16px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.piatti-title {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.piatti-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.piatti-card {
+  width: 100%;
+  min-height: 400px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--color-bordo);
+  background: white;
+  transition: var(--transition-fast);
+  cursor: pointer;
+}
+
+.piatti-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border-color: #ccc;
+}
+
+.piatti-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: var(--transition-fast);
+}
+
+.card-description {
+  padding: 20px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-testo);
+}
+
+.card-description p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--color-testo-chiaro);
+  flex-grow: 1;
+}
+
+.card-description .price {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-rosso);
+  margin-top: 12px;
+  align-self: flex-end;
+}
+
+/* ===========================================
+   CTA SECTION
+   =========================================== */
+.taste-section {
+  background-image: url(../img/hero-img.jpg);
+  background-size: cover;
+  text-align: center;
+  min-height: 500px;
+
+  justify-content: center;
+  padding: 24px 16px;
+  margin: 48px 0;
+  position: relative;
+}
+
+.taste-section::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.taste-container > * {
+  z-index: 3;
+}
+
+.taste-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.taste-title {
+  color: var(--color-testo);
+  background-color: white;
+  width: fit-content;
+}
+
+.taste-para {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* ===========================================
+   INFO SECTION
+   =========================================== */
+.info-section {
+  padding: 48px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.info-item {
+  border-bottom: 2px solid var(--color-testo);
+  margin-bottom: 24px;
+}
+
+.info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.info-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-testo);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info-toggle {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-testo);
+  transition: var(--transition-fast);
+}
+
+.info-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-fast), padding var(--transition-fast);
+}
+
+.info-content.active {
+  max-height: 200px;
+  padding-bottom: 24px;
+}
+
+.info-toggle.active {
+  transform: rotate(45deg);
+}
+
+.info-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  font-weight: 400;
+}
+
+.info-header:hover {
+  background-color: rgba(139, 69, 19, 0.05);
+  margin: 0 -10px;
+  padding: 20px 10px;
+  border-radius: 4px;
+}
+
+/* ===========================================
+   RESPONSIVE
+   =========================================== */
+@media screen and (max-width: 768px) {
+  .dish-name {
+    font-size: var(--h4-mobile);
+  }
+  .dish-description {
+    font-size: var(--body-mobile);
+  }
+  .price {
+    font-size: var(--body-mobile);
+  }
+
+  .disclaimer {
+    padding: 16px 32px;
+    margin: auto;
+  }
+
+  .piatti-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .piatti-section {
+    margin: var(--section-padding-mobile) 16px;
+  }
+  .piatti-card {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .disclaimer {
+    padding: 16px 96px;
+
+    text-align: center;
+  }
+
+  .piatti-card {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+  }
+
+  .piatti-card img {
+    width: 300px;
+    height: 100%;
+    flex-shrink: 0;
+  }
+
+  .card-description {
+    flex: 1;
+    padding: 24px;
+    margin: auto;
+  }
+
+  .taste-section {
+    padding: 96px 48px;
+  }
+
+  .taste-para {
+    margin: 48px 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .taste-container {
+    padding: 72px 0;
+  }
+}

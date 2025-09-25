@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/menu.css" />
+  </head>
+  <body>
+    <!----------------- HEADER ------------------>
+    <header>
+      <nav class="nav-container">
+        <div class="nav-title restaurant-name"><h1>Les Continental</h1></div>
+        <div id="menuBurger" class="nav-menuBurger">
+          <div class="nav-menuBurgerBread"></div>
+          <div class="nav-menuBurgerBread"></div>
+          <div class="nav-menuBurgerBread"></div>
+        </div>
+        <div id="menuLinks" class="nav-links">
+          <h2><a href="./index.html">Home</a></h2>
+          <h2><a class="active" href="./menu.html">Menu</a></h2>
+          <h2><a href="./contacts.html">Contatti</a></h2>
+        </div>
+      </nav>
+    </header>
+
+    <!----------------------- MENU -------------------------->
+
+    <main class="menu-page">
+      <section class="menu-hero">
+        <h1>La Nostra Carta</h1>
+        <p>Scopri i sapori autentici del Senegal</p>
+      </section>
+
+      <section class="menu-section">
+        <div
+          id="menu-render"
+          class="menu-grid"
+          role="list"
+          aria-label="Lista piatti del menu"
+        ></div>
+      </section>
+    </main>
+
+    <!------------------------------ FOOTER ----------------------------------->
+    <footer class="footer-section">
+      <div class="footer-items">
+        <div class="footer-item">
+          <img
+            src="./img/logo.jpg"
+            alt="Les Continental Logo"
+            width="96"
+            height="96"
+          />
+          <p>
+            Autentici sapori senegalesi nel cuore di Milano. Ogni piatto
+            racconta una storia di tradizione, ospitalità e passione per la
+            cucina dell'Africa Occidentale. Benvenuti nella nostra Teranga!
+          </p>
+          <button class="btn btn--footer">Contattaci</button>
+        </div>
+
+        <div class="footer-item">
+          <h4>Contatti</h4>
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <p>Via Lorenzo Pagani 6<br />Varese (VA), 21100</p>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <p>+39 333 444 5577</p>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">✉️</div>
+              <p>continental@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-item">
+          <h4>Menu</h4>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#menu">I Nostri Piatti</a>
+            <a href="#about">Chi Siamo</a>
+            <a href="#contact">Contatti</a>
+            <a href="#reservations">Prenotazioni</a>
+          </div>
+        </div>
+
+        <div class="footer-item">
+          <h4>Orari Apertura</h4>
+          <div class="hours-info">
+            <p>Martedì - Domenica</p>
+            <p>12:00 - 15:00</p>
+            <p>19:00 - 23:00</p>
+            <p style="color: #e74c3c; margin-top: 8px; font-weight: 600">
+              Lunedì: Chiuso
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2024 Les Continental - Ristorante Senegalese. Tutti i diritti
+          riservati.
+        </p>
+      </div>
+    </footer>
+    <script src="./js/menuScript.js"></script>
+    <script src="./js/menuData.js"></script>
+    <script src="./js/menuRender.js"></script>
+    <script src="./js/menuControls.js"></script>
+  </body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+
+    <!----------------- HEADER ------------------>
+    <header>
+      <nav class="nav-container">
+        <div class="nav-title restaurant-name"><h1>Les Continental</h1></div>
+        <div id="menuBurger" class="nav-menuBurger">
+          <div class="nav-menuBurgerBread"></div>
+          <div class="nav-menuBurgerBread"></div>
+          <div class="nav-menuBurgerBread"></div>
+        </div>
+        <div id="menuLinks" class="nav-links">
+          <h2><a class="active" href="#home">Home</a></h2>
+          <h2><a href="./menu.html">Menu</a></h2>
+          <h2><a href="./contacts.html">Contatti</a></h2>
+        </div>
+      </nav>
+    </header>
+
+    <!-------------------- HERO SECTION ----------------->
+    <div class="hero-container">
+      <p>Restaurant & lounge</p>
+      <h2 class="hero-title">
+        Benvenuti nella nostra Teranga</br> dove ogni pasto è una festa
+      </h2>
+      <div class="hero-buttons">
+
+        <button class="btn btn--primary">Prenota Ora</button>
+        <Button class="btn btn--secondary">Menu</Button>
+      </div>
+
+    </div>
+    <!-- DISCLAIMER -->
+    <div class="disclaimer">
+      <p>N.B. Per garantire freschezza e qualita dei nostri piatti 
+        e per via delle lunghe preparazioni di alcuni piatti 
+        vi consigliamo di ordinarli assieme al tavolo guardate 
+        pure il nostro menu per tutte le informazioni</p>
+
+    </div>
+    <!---------------------- SEZIONE PIATTI MIGLIORI ------------------>
+    <div class="piatti-section">
+      
+      <h2 class="piatti-title">I Nostri Piatti migliori</h2>
+
+      <div class="piatti-grid"> 
+        <div class="piatti-card">
+          <img src="./img/food-pic.jpg" alt="card-img"/>
+          <div class="card-description">
+            <h4 class="card-title">Titolo</h4>
+            <p>Riso mantecato a lungo con platano picchiatore
+              13 spezie e erbe aromatiche e un sentore di vaniglia</p>
+              <p class="price">€ 23</p>
+          </div>
+
+        </div>
+        <div class="piatti-card">
+          <img src="./img/food-pic.jpg" alt="card-img"/>
+          <div class="card-description">
+            <h4 class="card-title">Titolo</h4>
+            <p>Riso mantecato a lungo con platano picchiatore
+              13 spezie e erbe aromatiche e un sentore di vaniglia</p>
+              <p class="price">€ 23</p>
+          </div>
+
+        </div>
+        <div class="piatti-card">
+          <img src="./img/food-pic.jpg" alt="card-img"/>
+          <div class="card-description">
+            <h4 class="card-title">Titolo</h4>
+            <p>Riso mantecato a lungo con platano picchiatore
+              13 spezie e erbe aromatiche e un sentore di vaniglia</p>
+              <p class="price">€ 23</p>
+          </div>
+
+        </div>
+        <div class="piatti-card">
+          <img src="./img/food-pic.jpg" alt="card-img"/>
+          <div class="card-description">
+            <h4 class="card-title">Titolo</h4>
+            <p>Riso mantecato a lungo con platano picchiatore
+              13 spezie e erbe aromatiche e un sentore di vaniglia</p>
+              <p class="price">€ 23</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!--<button class="btn btn--primary">Guarda tutto il menu</button> -->
+
+
+
+    </div>
+
+    <!------------------ CTA section ------------------->
+
+    <div class="taste-section">
+      <div class="taste-container">
+
+        <h2 class="taste-title">I SAPORI AUTENTICI DEL SENEGAL</h2>
+        <p class="taste-para">Scopri la vera essenza dell'Africa Occidentale con il nostro Thieboudienne—riso rosso con pesce e verdure che raccontano storie di famiglia. O concediti un Mafé, il cremoso stufato di arachidi che abbraccia ogni ingrediente con amore.
+          Ogni piatto è un viaggio nella Teranga, l'ospitalità senegalese che rende ogni pasto una festa</p>
+          
+          <button class="btn btn--taste">SCOPRI IL NOSTRO MENU</button>
+        </div>
+    </div>
+
+
+    <!------------------ GENERAL INFO --------------->
+
+    <section class="info-section">
+        <div class="info-item">
+            <div class="info-header" onclick="toggleInfo(this)">
+                <h3 class="info-title">Posizione</h3>
+                <span class="info-toggle">+</span>
+            </div>
+            <div class="info-content">
+                <p class="info-text">
+                    Via Giuseppe Garibaldi, 45<br>
+                    20121 Milano (MI)<br><br>
+                    Facilmente raggiungibile con i mezzi pubblici:<br>
+                    Metro M2 (Moscova) - 3 minuti a piedi<br>
+                    Tram 2, 4, 12, 14
+                </p>
+            </div>
+        </div>
+
+        <div class="info-item">
+            <div class="info-header" onclick="toggleInfo(this)">
+                <h3 class="info-title">Orari</h3>
+                <span class="info-toggle">+</span>
+            </div>
+            <div class="info-content">
+                <p class="info-text">
+                    <strong>Martedì - Domenica</strong><br>
+                    12:00 - 15:00 | 19:00 - 23:00<br><br>
+                    <strong>Lunedì:</strong> Chiuso<br><br>
+                    Per prenotazioni chiamare il<br>
+                    <strong>02 1234 5678</strong>
+                </p>
+            </div>
+        </div>
+
+        <div class="info-item concept">
+            <div class="info-header" onclick="toggleInfo(this)">
+                <h3 class="info-title">Il Nostro Concept</h3>
+                <span class="info-toggle ">+</span>
+            </div>
+            <div class="info-content">
+                <p class="info-text">
+                    Da <strong>CONTINENTAL</strong> serviamo autentici piatti senegalesi e street food dell'Africa Occidentale. Niente cucina fusion o moderna, solo la genuina tradizione culinaria del Senegal, preparata come facevano le nostre nonne.
+                </p>
+            </div>
+        </div>
+    </section>
+
+  <footer class="footer-section">
+        <div class="footer-items">
+            <div class="footer-item">
+                <img src="./img/logo.jpg" alt="Les Continental Logo" width="96" height="96"/>
+                <p>Autentici sapori senegalesi nel cuore di Milano. Ogni piatto racconta una storia di tradizione, ospitalità e passione per la cucina dell'Africa Occidentale. Benvenuti nella nostra Teranga!</p>
+                <button class="btn btn--footer">Contattaci</button>
+            </div>
+            
+            <div class="footer-item">
+                <h4>Contatti</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <p>Via Lorenzo Pagani 6<br>Varese (VA), 21100</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <p>+39 333 444 5577</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <p>continental@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-item">
+                <h4>Menu</h4>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#menu">I Nostri Piatti</a>
+                    <a href="#about">Chi Siamo</a>
+                    <a href="#contact">Contatti</a>
+                    <a href="#reservations">Prenotazioni</a>
+                </div>
+            </div>
+            
+            <div class="footer-item">
+                <h4>Orari Apertura</h4>
+                <div class="hours-info">
+                    <p>Martedì - Domenica</p>
+                    <p>12:00 - 15:00</p>
+                    <p>19:00 - 23:00</p>
+                    <p style="color: #e74c3c; margin-top: 8px; font-weight: 600;">Lunedì: Chiuso</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Les Continental - Ristorante Senegalese. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+
+    <script src="./js/menuScript.js"></script>
+    <script src="./js/infoScript.js"></script>
+    
+
+  </body>
+</html>
