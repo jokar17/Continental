@@ -9,6 +9,7 @@
   position: relative;
   height: calc(90vh - 60px);
   background-image: url("../img/hero-img.jpg");
+  background-image: url("../img/hero-img.webp");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -301,7 +302,7 @@
   }
 
   .taste-section {
-    padding: 96px 48px;
+    padding: 72px 48px;
   }
 
   .taste-para {
@@ -312,5 +313,6 @@
 @media screen and (min-width: 1440px) {
   .taste-container {
     padding: 72px 0;
+    max-height: 70vh;
   }
 }
